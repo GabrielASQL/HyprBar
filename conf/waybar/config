@@ -1,0 +1,76 @@
+{
+    "name": "top",
+    "position": "left",
+	"layer": "bottom",
+	"margin-bottom": 15,
+    "margin-left": 10,
+    "height": 1030,
+    "width": 10,
+	"margin-top": 8,
+    "modules-left": ["custom/clock","clock", "tray"],
+    "modules-center": ["hyprland/workspaces"],
+    "modules-right": ["custom/launcher"],
+
+"hyprland/workspaces": {
+        "format": " ",
+        "on-scroll-up": "hyprctl dispatch workspace e+1",
+        "on-scroll-down": "hyprctl dispatch workspace e-1",
+        "on-click": "activate"
+	    },
+
+"custom/weather": {
+        "format": "{} °",
+        "tooltip": true,
+        "interval": 3600,
+        "exec": "wttrbar",
+        "return-type": "json"
+        },
+
+	"pulseaudio": {
+		"tooltip": false,
+		"scroll-step": 5,
+		"format": "{icon}",
+		"format-muted": "{icon} {volume}%",
+		"on-click":"pactl set-sink-mute @DEFAULT_SINK@ toggle",	
+        "format-icons": {
+        "default": ["<span foreground='#89b4fa'></span>", "<span foreground='#89b4fa'></span>", "<span foreground='#89b4fa'></span>"]
+		}
+	},
+	"network": {
+		// "interface": "wlp2*", // (Optional) To force the use of this interface
+        "format-wifi": "<span foreground='#89b4fa'> </span>",
+        "format-ethernet": "",
+    	"tooltip-format": "{essid} ({signalStrength}%)",
+		"format-linked": "{ifname} (No IP) ",
+		"format-disconnected": "⚠",
+		"format-alt": "{ifname}: {ipaddr}/{cidr}"
+		},
+  "backlight": {
+        "tooltip": false,
+        "format": "<span foreground='#89b4fa'></span>",
+        "interval":1,
+        "on-scroll-up": "light -A 5",
+        "on-scroll-down": "light -U 5" 
+    },
+	"tray":{
+		"icon-size":18,
+		"spacing": 10
+	},
+    "custom/clock": {
+        "format": " ",
+        "on-click": "ewww o --toggle date"  
+},
+    "clock": {
+        "format": "{:%I\n%M}",
+},
+    "custom/launcher":{
+        "format": " ",
+        "on-click": "ewww o --toggle launchermenu",
+        "on-click-right": "ewww c launchermenu"
+    },
+    "custom/power":{
+        "format": " ",
+        "on-click": "ewww o --toggle powermenu",
+    },
+}
+

@@ -1,0 +1,136 @@
+window#waybar {
+  border-radius: 10px;
+  background: #f7f7f7;
+}
+window#waybar.hidden {
+  opacity: 0.2;
+}
+#window {
+  margin-top: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 20px;
+  transition: none;
+  color: transparent;
+  background: transparent;
+}
+#workspaces {
+  margin-top: 6px;
+  font-family: "Material Design Icons Desktop";
+  margin-left: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-size: 25px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  border-radius: 25px;
+  transition: none;
+}
+
+#workspaces button {
+  transition: none;
+  color: #b9b9b9;
+  background: transparent;
+  font-size: 25px;
+  border-radius: 2px;
+}
+#workspaces button.active {
+  color: #101010;
+  font-family: "Material Design Icons Desktop";
+  font-size: 30px;
+}
+
+#workspaces button:hover {
+  transition: none;
+  box-shadow: inherit;
+  text-shadow: inherit;
+  color: #7c7c7c;
+}
+
+#workspaces button.focused:hover {
+  color: #101010;
+}
+#network,
+#pulseaudio,
+#clock,
+#backlight,
+#tray,
+#custom-weather {
+  font-family: "AnonymicePro Nerd Font";
+  font-weight: bold;
+  font-size: 27px;
+  margin-top: 10px;
+  margin-left: 2px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  margin-bottom: 8px;
+  border-radius: 20px;
+  transition: none;
+  color: #101010;
+}
+#custom-clock {
+  font-family: "AnonymicePro Nerd Font";
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: 10px;
+  margin-left: 4px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  margin-bottom: -10px;
+  border-radius: 20px;
+  transition: none;
+  color: #101010;
+}
+#custom-power {
+  font-family: "Material Design Icons Desktop";
+  font-size: 30px;
+  margin-top: 6px;
+  margin-left: 0px;
+  padding-left: 15px;
+  padding-right: 18px;
+  margin-bottom: 6px;
+  border-radius: 20px;
+  transition: none;
+  color: #f38ba8;
+}
+#custom-launcher {
+  font-family: "Material Design Icons Desktop";
+  font-size: 35px;
+  margin-top: 10px;
+  margin-left: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  transition: none;
+  color: #101010;
+}
+#custom-music {
+  font-family: "Material Design Icons Desktop";
+  font-size: 25px;
+  margin-top: 12px;
+  margin-left: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 12px;
+  border-radius: 999px;
+  transition: none;
+  color: #94e2d5;
+}
+#custom-close {
+  font-family: "Material Design Icons Desktop";
+  font-size: 35px;
+  margin-top: 12px;
+  margin-left: 15px;
+  margin-right: 15px;
+  padding-left: 12px;
+  padding-right: 12px;
+  margin-bottom: 12px;
+  border-radius: 999px;
+  transition: none;
+  color: #94e2d5;
+}
